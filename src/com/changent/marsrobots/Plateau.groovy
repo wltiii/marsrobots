@@ -1,4 +1,4 @@
-package com.changent.akqarobots
+package com.changent.marsrobots
 /**
  * A <code>Plateau</code> defines the grid to be explored by one or more <code>Robot</code>.
  */

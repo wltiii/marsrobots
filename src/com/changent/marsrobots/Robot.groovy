@@ -1,4 +1,4 @@
-package com.changent.akqarobots
+package com.changent.marsrobots
 /**
  * A <code>Robot</code> provides access to exploring a plateau.
  */

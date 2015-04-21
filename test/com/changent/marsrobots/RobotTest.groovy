@@ -1,4 +1,4 @@
-package com.changent.akqarobots
+package com.changent.marsrobots
 
 class RobotTest extends GroovyTestCase {
 

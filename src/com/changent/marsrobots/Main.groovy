@@ -1,7 +1,7 @@
-package com.changent.akqarobots
+package com.changent.marsrobots
 
 /** Main is a crude client demonstrating usage
- *  of the akqaRobots api
+ *  of the marsrobots api
  */
 
 class Main {
