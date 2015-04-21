@@ -1,0 +1,24 @@
+# MarsRobots Technical Interview Exercise
+
+Notes
+1. This application was built using Groovy 1.7.1.
+2. It was developed using the Intellij IDEA (Maia #10781).
+3. Test classes use GroovyTestCase included with Groovy 1.7.1.
+4. All tests and the Main class were run via the IDE. No Ant, Gant, Gradle, etc., file has been created.
+5. Main is a crude version of client that demonstrates the minimum requirements are met as set forth in the document.
+
+Disclaimer
+All applications can be solved in a myriad of ways. I believed that what was wanted was something that not only worked, but also:
+1. Demonstrated design skills
+2. Demonstrated knowledge of Groovy
+3. Demonstrated knowledge of unit testing
+
+Not having access to the user/analyst, choices had to be made. I thought about using a factory for creating the robots, and, in a sense, I did, but thought that the true factory pattern was overkill for this task. It seemed to violate the YAGNI principle of Agile development. Likewise, there is a lack of any sort of user interface for real time interaction with robots. That said, some choices were made based upon likely changes. Probable addition of terrain features that would make certain grid points inaccessible is but one.
+
+Another design choice was to not prevent two robots from occupying the same grid. My understanding is that a grid cell is large enough to allow more than one robot in it at the same time. Not test for collisions are necessary for this purpose.
+
+I thought about having the Coordinates class decorate Point, but this seemed like a pretty simplistic application and this felt like overkill. It might even be more confusing.
+
+I look forward to discussing this application and the choices made.
+
+Thank you.
