@@ -1,13 +1,13 @@
-# MarsRobots Technical Interview Exercise
+=== MarsRobots Technical Interview Exercise ===
 
-Notes
+== Notes ==
 1. This application was built using Groovy 1.7.1.
 2. It was developed using the Intellij IDEA (Maia #10781).
 3. Test classes use GroovyTestCase included with Groovy 1.7.1.
 4. All tests and the Main class were run via the IDE. No Ant, Gant, Gradle, etc., file has been created.
 5. Main is a crude version of client that demonstrates the minimum requirements are met as set forth in the document.
 
-Disclaimer
+== Disclaimer ==
 All applications can be solved in a myriad of ways. I believed that what was wanted was something that not only worked, but also:
 1. Demonstrated design skills
 2. Demonstrated knowledge of Groovy
@@ -19,6 +19,77 @@ Another design choice was to not prevent two robots from occupying the same grid
 
 I thought about having the Coordinates class decorate Point, but this seemed like a pretty simplistic application and this felt like overkill. It might even be more confusing.
 
-I look forward to discussing this application and the choices made.
+I look forward to discussing this application and the choices made with anyone who has interest.
 
-Thank you.
+=== Requirements ===
+
+1. The problem below requires some kind of input. You are free to implement any mechanism for
+feeding input into your solution (for example, using hard coded data within a unit test). You
+should provide sufficient evidence that your solution is complete by, as a minimum, indicating
+that it works correctly against the supplied test data.
+
+2. We highly recommend using a unit testing framework such as JUnit or NUnit. Even if you have
+not used it before, it is simple to learn and incredibly useful.
+
+3. The code you write should be of production quality, and most importantly, it should be code
+you are proud of.
+
+4. We recommend you *spend no more than 2 hours* on this task.
+
+
+== MARS ROBOTS ==
+
+1. A squad of robotic rovers are to be landed by NASA on a plateau on Mars.
+
+2. This plateau, which is curiously rectangular, must be navigated by the rovers so that their
+on board cameras can get a complete view of the surrounding terrain to send back to Earth.
+
+3. A rover's position is represented by a combination of an x and y co-ordinates and a letter
+representing one of the four cardinal compass points. The plateau is divided up into a grid to
+simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom
+left corner and facing North.
+
+4. In order to control a rover, NASA sends a simple string of letters. The possible letters are
+'L', 'R' and 'M'. 'L' and 'R' makes the rover spin 90 degrees left or right respectively, without
+moving from its current spot.
+
+5. 'M' means move forward one grid point, and maintain the same heading.
+
+6. Assume that the square directly North from (x, y) is (x, y+1).
+
+= Input =
+
+1. The first line of input is the upper-right coordinates of the plateau, the lower-left
+coordinates are assumed to be 0,0.
+
+2. The rest of the input is information pertaining to the rovers that have been deployed. Each
+rover has two lines of input. The first line gives the rover's position, and the second line is
+a series of instructions telling the rover how to explore the plateau.
+
+3. The position is made up of two integers and a letter separated by spaces, corresponding to
+the x and y co-ordinates and the rover's orientation.
+
+4. Each rover will be finished sequentially, which means that the second rover won't start to
+move until the first one has finished moving.
+
+= Output =
+
+The output for each rover should be its final co-ordinates and heading.
+
+*Test Input*
+
+5 5
+
+1 2 N
+
+LMLMLMLMM
+
+3 3 E
+
+MMRMMRMRRM
+
+*Expected Output*
+
+1 3 N
+
+5 1 E
