@@ -1,0 +1,34 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+ext {
+	groovyGroup = 'org.codehaus.groovy'
+	groovyVersion = '2.3.6'
+	junitGroup = 'junit'
+	junitVersion = '4.11'
+	log4jGroup = 'log4j'
+	log4jVersion = '1.2.17'
+	commonsLangGroup = 'org.apache.commons'
+	commonsLangVersion = '3.1'
+	equalsverifierGroup = 'nl.jqno.equalsverifier'
+	equalsverifierVersion = '1.3.1'
+	guavaGroup = 'com.google.guava'
+	guavaVersion = '15.0'
+	spockGroup = 'org.spockframework'
+	spockVersion = '0.7-groovy-2.0'
+}
+
+dependencies {
+	compile group: groovyGroup, name: 'groovy-all', version: groovyVersion
+	compile group: junitGroup, name: 'junit', version: junitVersion
+	// compile group: commonsLangGroup, name: 'commons-lang3', version: commonsLangVersion
+	// compile group: log4jGroup, name: 'log4j', version: log4jVersion
+	// compile group: guavaGroup, name: 'guava', version: guavaVersion
+	// compile group: spockGroup, name: 'spock-core', version: spockVersion
+	// testCompile group: equalsverifierGroup, name: 'equalsverifier', version: equalsverifierVersion
+}
