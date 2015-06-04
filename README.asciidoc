@@ -1,5 +1,4 @@
-= Interview Exercise - MarsRobots 
-
+= Interview Exercise - MarsRobots
 Bill Turner
 :toc:
 :toc-placement!:
@@ -90,18 +89,18 @@ made herein, where applicable, are to the best of my recollection.
 . All tests and the Main class were run via the IDE. No Ant, Gant, Gradle, etc., file has been created.
 . Main is a crude version of client that demonstrates the minimum requirements are met as set forth in the document.
 
-Not having access to the user/analyst, choices had to be made. I thought about using a factory for 
-creating the robots, and, in a sense, I did, but thought that the true factory pattern was overkill 
-for this task. It seemed to violate the YAGNI principle of Agile development. Likewise, there is a 
-lack of any sort of user interface for real time interaction with robots. That said, some choices 
-were made based upon likely changes. Probable addition of terrain features that would make certain 
+Not having access to the user/analyst, choices had to be made. I thought about using a factory for
+creating the robots, and, in a sense, I did, but thought that the true factory pattern was overkill
+for this task. It seemed to violate the YAGNI principle of Agile development. Likewise, there is a
+lack of any sort of user interface for real time interaction with robots. That said, some choices
+were made based upon likely changes. Probable addition of terrain features that would make certain
 grid points inaccessible is but one.
 
-Another design choice was to not prevent two robots from occupying the same grid. My understanding is 
-that a grid cell is large enough to allow more than one robot in it at the same time. No test for 
+Another design choice was to not prevent two robots from occupying the same grid. My understanding is
+that a grid cell is large enough to allow more than one robot in it at the same time. No test for
 collisions are necessary for this purpose.
 
-I thought about having the Coordinates class decorate Point, but this seemed like a pretty simplistic 
+I thought about having the Coordinates class decorate Point, but this seemed like a pretty simplistic
 application and this felt like overkill. It might even be more confusing.
 
 I look forward to discussing this application and the choices made with anyone who has interest.
@@ -115,7 +114,7 @@ Below is a list of technologies used in the development of Activity.
 [to be written]
 
 == Disclaimer ==
-All applications can be solved in a myriad of ways. I believed that what was wanted was something 
+All applications can be solved in a myriad of ways. I believed that what was wanted was something
 that not only worked, but also:
 
 . Demonstrated design skills
@@ -126,4 +125,3 @@ that not only worked, but also:
 include::STYLE_GUIDE.asciidoc[]
 
 include::TODO.asciidoc[]
-
