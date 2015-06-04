@@ -1,5 +1,9 @@
+apply plugin: 'eclipse'
 apply plugin: 'groovy'
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.changent.marsrobots.Main'
 
 repositories {
 	mavenLocal()
@@ -25,10 +29,9 @@ ext {
 
 dependencies {
 	compile group: groovyGroup, name: 'groovy-all', version: groovyVersion
-	compile group: junitGroup, name: 'junit', version: junitVersion
-	// compile group: commonsLangGroup, name: 'commons-lang3', version: commonsLangVersion
-	// compile group: log4jGroup, name: 'log4j', version: log4jVersion
-	// compile group: guavaGroup, name: 'guava', version: guavaVersion
-	// compile group: spockGroup, name: 'spock-core', version: spockVersion
-	// testCompile group: equalsverifierGroup, name: 'equalsverifier', version: equalsverifierVersion
+	compile group: commonsLangGroup, name: 'commons-lang3', version: commonsLangVersion
+	compile group: log4jGroup, name: 'log4j', version: log4jVersion
+	compile group: guavaGroup, name: 'guava', version: guavaVersion
+  testCompile group: spockGroup, name: 'spock-core', version: spockVersion
+	testCompile group: equalsverifierGroup, name: 'equalsverifier', version: equalsverifierVersion
 }

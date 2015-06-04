@@ -1,25 +1,10 @@
-= MarsRobots Technical Interview Exercise =
+= Interview Exercise - MarsRobots 
 
-== Notes ==
-. This application was built using Groovy 1.7.1.
-. It was developed using the Intellij IDEA (Maia #10781).
-. Test classes use GroovyTestCase included with Groovy 1.7.1.
-. All tests and the Main class were run via the IDE. No Ant, Gant, Gradle, etc., file has been created.
-. Main is a crude version of client that demonstrates the minimum requirements are met as set forth in the document.
+Bill Turner
+:toc:
+:toc-placement!:
 
-Not having access to the user/analyst, choices had to be made. I thought about using a factory for creating the robots, and, in a sense, I did, but thought that the true factory pattern was overkill for this task. It seemed to violate the YAGNI principle of Agile development. Likewise, there is a lack of any sort of user interface for real time interaction with robots. That said, some choices were made based upon likely changes. Probable addition of terrain features that would make certain grid points inaccessible is but one.
-
-Another design choice was to not prevent two robots from occupying the same grid. My understanding is that a grid cell is large enough to allow more than one robot in it at the same time. Not test for collisions are necessary for this purpose.
-
-I thought about having the Coordinates class decorate Point, but this seemed like a pretty simplistic application and this felt like overkill. It might even be more confusing.
-
-I look forward to discussing this application and the choices made with anyone who has interest.
-
-=== Disclaimer ===
-All applications can be solved in a myriad of ways. I believed that what was wanted was something that not only worked, but also:
-. Demonstrated design skills
-. Demonstrated knowledge of Groovy
-. Demonstrated knowledge of unit testing
+toc::[]
 
 == Requirements ==
 
@@ -37,7 +22,7 @@ you are proud of.
 . We recommend you *spend no more than 2 hours* on this task.
 
 
-== MARS ROBOTS ==
+=== MARS ROBOTS ===
 
 . A squad of robotic rovers are to be landed by NASA on a plateau on Mars.
 
@@ -95,4 +80,50 @@ MMRMMRMRRM
 
 5 1 E
 
-== Considerations for Future Releases ==
+== Architecture Overview ==
+
+This application was originally developed in 2009, shortly after I first started using Groovy. The statements
+made herein, where applicable, are to the best of my recollection.
+
+. It was developed using the Intellij IDEA (Maia #10781).
+. Test classes use GroovyTestCase included with Groovy 1.7.1.
+. All tests and the Main class were run via the IDE. No Ant, Gant, Gradle, etc., file has been created.
+. Main is a crude version of client that demonstrates the minimum requirements are met as set forth in the document.
+
+Not having access to the user/analyst, choices had to be made. I thought about using a factory for 
+creating the robots, and, in a sense, I did, but thought that the true factory pattern was overkill 
+for this task. It seemed to violate the YAGNI principle of Agile development. Likewise, there is a 
+lack of any sort of user interface for real time interaction with robots. That said, some choices 
+were made based upon likely changes. Probable addition of terrain features that would make certain 
+grid points inaccessible is but one.
+
+Another design choice was to not prevent two robots from occupying the same grid. My understanding is 
+that a grid cell is large enough to allow more than one robot in it at the same time. No test for 
+collisions are necessary for this purpose.
+
+I thought about having the Coordinates class decorate Point, but this seemed like a pretty simplistic 
+application and this felt like overkill. It might even be more confusing.
+
+I look forward to discussing this application and the choices made with anyone who has interest.
+
+=== Technology Stack ===
+Below is a list of technologies used in the development of Activity.
+
+* Groovy 1.7.1.
+
+== Getting Started ==
+[to be written]
+
+== Disclaimer ==
+All applications can be solved in a myriad of ways. I believed that what was wanted was something 
+that not only worked, but also:
+
+. Demonstrated design skills
+. Demonstrated knowledge of Groovy
+. Demonstrated knowledge of unit testing
+
+
+include::STYLE_GUIDE.asciidoc[]
+
+include::TODO.asciidoc[]
+

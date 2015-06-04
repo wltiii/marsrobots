@@ -1,0 +1,7 @@
+= TODOs
+Bill Turner
+
+== Considerations for Future Releases ==
+* Add Gradle support
+* Convert tests to Spock
+* Create an Angular front end
